@@ -1,21 +1,116 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  background: #f4f4f5;
-  color: #202124;
-  font-family: Arial, Helvetica, sans-serif;
+.page {
+  width: 900px;
+  margin: 0 auto;
+  border: 3px solid black
 }
 
-main {
-  max-width: 500px;
+nav {
+  background-color: rgb(61, 84, 105);
+
 }
 
-h1 {
-  font-size: 1.5rem;
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  width: 65px;
 }
 
-p {
-  line-height: 1.5;
+nav ul li:hover {
+  opacity: 0.25%;
 }
+
+header {
+  position: relative;
+  height: 45px;
+  background-color: rgb(107, 145, 183);
+  margin-top: 15px;
+}
+
+header img {
+  width: 40px;
+}
+
+header div {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+header a {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+section {
+  background-color: rgb(223, 236, 249);
+  position: relative;
+  display: flow-root;
+}
+
+.card {
+  float: right;
+  padding: 8px;
+  width: 16%;
+}
+
+#arrows {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+
+#arrows input {
+  padding: 5px;
+}
+
+article {
+  position: relative;
+  height: 340px;
+}
+
+article img {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  height: 90%;
+  width: 50%;
+}
+
+article div {
+  position: absolute;
+  width: 45%;
+  top: 5%;
+  right: 2%;
+}
+
+article span {
+  display: inline-block;
+  background: red;
+  color: white;
+  padding: 4px 10px;
+}
+article h1{
+  background-color: rgb(61, 84, 105);
+  padding: 5px;
+  color: white;
+}
+
+article p {
+  text-align: justify;
+}
+
+article small{
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+}
+
+/* בגלל שכל האלמנטים הפנימיים הם absolute אז הגודל של האלמנט האב היה מצטמצם לאפס */
